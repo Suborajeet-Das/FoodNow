@@ -35,7 +35,7 @@ const YourRole = () => {
         style={{ marginBottom: 50 }}
         placeholder="I'm a _________"
         options={[
-          { label: "Student", value: "student" },
+          { label: "Customer", value: "Customer" },
           { label: "Staff", value: "Staff" },
         ]}
         value={selectedRole}
