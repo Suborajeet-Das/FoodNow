@@ -2,7 +2,9 @@ import {Text, View} from 'react-native'
 
 const Home = () => {
   return (
-    <Text>hello</Text>
+    <View style={{backgroundColor: 'blue',flex:1}}>
+      <Text>Hello</Text>
+    </View>
   )
 };
 

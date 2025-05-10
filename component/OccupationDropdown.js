@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import css from '@components/css';
+import css from '@component/css';
 
 const OccupationDropdown = ({ options, placeholder, style, value, onValueChange }) => {
 

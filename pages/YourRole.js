@@ -1,8 +1,8 @@
 import { Text, View, Image, StyleSheet } from "react-native";
-import OccupationDropdown from "@components/OccupationDropdown";
-import css from "@components/css";
+import OccupationDropdown from "@component/OccupationDropdown";
+import css from "@component/css";
 import React, { useState } from "react";
-import PrimaryButton from "component/PrimaryButton";
+import PrimaryButton from '@component/PrimaryButton';
 import {useNavigation} from '@react-navigation/native';
 
 
@@ -32,6 +32,7 @@ const YourRole = () => {
         onValueChange={(val) => setSelectedCanteen(val)}
       />
       <OccupationDropdown
+        style={{ marginBottom: 50 }}
         placeholder="I'm a _________"
         options={[
           { label: "Student", value: "student" },
@@ -41,15 +42,18 @@ const YourRole = () => {
         onValueChange={(val) => setSelectedRole(val)}
       />
 
-      <PrimaryButton
-        label="Confirm"
-        style={css.PrimaryButton}
-        textStyle={[
-          css.PrimaryButtonText,
-          { fontSize: 20, fontWeight: "bold" },
-        ]}
-        onPress={()=> navigation.navigate('Home')}
-      />
+      <View style={{
+        position: "absolute",
+        bottom: 10,
+        width: "100%",
+      }}> 
+        <PrimaryButton
+           label="Confirm"
+           style={[css.PrimaryButton,{backgroundColor: "#102E50"}]}
+           textStyle={[css.PrimaryButtonText,{ fontSize: 20, fontWeight: "bold" },]}
+           onPress={()=> navigation.navigate('Home')}
+        />
+      </View>
     </View>
   );
 };

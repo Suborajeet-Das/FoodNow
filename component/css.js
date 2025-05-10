@@ -1,6 +1,4 @@
-import SplashScreen from "@pages/SplashScreen";
 import { StyleSheet } from "react-native";
-import PrimaryButton from "./PrimaryButton";
 
 const css = StyleSheet.create({
   SplashScreenContainer: {
@@ -20,7 +18,6 @@ const css = StyleSheet.create({
     width: "55%",
   },
   PrimaryButton: {
-    backgroundColor: "rgba(255, 255, 255, 0.15)",
     paddingVertical: 14,
     paddingHorizontal: 20,
     borderRadius: 35,
@@ -38,11 +35,12 @@ const css = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
+    padding: 20,
   },
   dropDownContainer: {
     flexDirection: "row",
     alignItems: "center",
-    width: "80%",
+    width: "100%",
   },
   
   PickerWrapper: {
